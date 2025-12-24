@@ -4,19 +4,31 @@ import { Ionicons } from "@expo/vector-icons";
 export default function TabsLayout() {
   return (
     <Tabs
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ color, size }) => {
-          let iconName: keyof typeof Ionicons.glyphMap = "home";
-
-          if (route.name === "index") iconName = "home";
-          if (route.name === "settings") iconName = "settings";
-
-          return <Ionicons name={iconName} size={size} color={color} />;
-        },
+      screenOptions={() => ({
+        tabBarActiveTintColor: "#1f75ffff",
+        headerStyle: { backgroundColor: "#192331ff" },
+        headerTintColor: "#cbd5f5",
+        tabBarStyle: { backgroundColor: "#090e1aff" },
       })}
     >
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
-      <Tabs.Screen name="settings" options={{ title: "Settings" }} />
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
