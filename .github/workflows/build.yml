@@ -26,4 +26,4 @@ jobs:
         run: npx tsc --noEmit
 
       - name: Build Web App
-        run: npx next build
+        run: npx expo export --platform web
