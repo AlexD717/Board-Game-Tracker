@@ -1,0 +1,10 @@
+node_modules
+android
+ios
+build
+.expo
+.github/workflows/*
+*.config.js
+.gitignore
+.prettierignore
+*.json

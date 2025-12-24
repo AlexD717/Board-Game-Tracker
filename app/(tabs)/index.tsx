@@ -1,7 +1,8 @@
-import { View } from "react-native";
 import { router } from "expo-router";
+import { View } from "react-native";
+
+import { Button, Text } from "../../src/components";
 import { styles } from "../../src/styles/darkTheme";
-import { Text, Button } from "../../src/components";
 
 export default function HomeScreen() {
   return (

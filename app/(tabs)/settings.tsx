@@ -1,4 +1,5 @@
 import { View } from "react-native";
+
 import { Text } from "../../src/components";
 import { styles } from "../../src/styles/darkTheme";
 
