@@ -10,11 +10,10 @@
     "format": "prettier --check \"app/**/*.{ts,tsx}\" \"src/**/*.{ts,tsx}\"",
     "format:fix": "prettier --write \"app/**/*.{ts,tsx}\" \"src/**/*.{ts,tsx}\"",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "build": "npx expo export --platform web"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@expo/vector-icons": "^15.0.3",
+    "@expo/vector-icons": "^15.0.3", 
     "eslint-plugin-unused-imports": "^4.3.0",
     "expo": "~54.0.30",
     "expo-router": "~6.0.21",
@@ -31,7 +30,6 @@
     "@types/react": "~19.1.10",
     "@typescript-eslint/eslint-plugin": "^8.50.1",
     "@typescript-eslint/parser": "^8.50.1",
-    "electron-builder": "^26.0.12",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

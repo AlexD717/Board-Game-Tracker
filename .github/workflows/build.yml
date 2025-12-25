@@ -3,7 +3,7 @@ name: Build Web App
 on:
   pull_request:
   push:
-    branches: [main, dev]
+    branches: [main]
 
 jobs:
   build:
